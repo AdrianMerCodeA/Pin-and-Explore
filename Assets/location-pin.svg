@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 60" role="img" aria-labelledby="title">
+  <title id="title">Map location pin</title>
+  <path d="M24 58S3 35 3 22a21 21 0 1 1 42 0C45 35 24 58 24 58Z" fill="#a64d32" stroke="#fffaf0" stroke-width="3"/>
+  <circle cx="24" cy="22" r="10" fill="#f7f2e8"/>
+  <circle cx="24" cy="22" r="4" fill="#183b3a"/>
+</svg>

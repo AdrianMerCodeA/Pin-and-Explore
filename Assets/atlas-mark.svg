@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Historical Atlas compass mark</title>
+  <circle cx="32" cy="32" r="29" fill="#183b3a"/>
+  <circle cx="32" cy="32" r="23" fill="none" stroke="#e4bd77" stroke-width="1.5"/>
+  <path d="M32 10 37 29 54 32 37 36 32 54 28 36 10 32 28 28Z" fill="#e4bd77"/>
+  <circle cx="32" cy="32" r="4" fill="#f7f2e8"/>
+</svg>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Choose a continent and discover its historic landmarks." />
+  <title>Explore the Map | Historical Atlas</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/heritage-data.js"></script>
+  <script defer src="js/explore.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Historical Atlas home">
+        <img src="Assets/atlas-mark.svg" alt="">
+        <span class="brand-copy"><span class="brand-name">Historical Atlas</span><span class="brand-tag">A world of stories</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a><a class="nav-about" href="about.html">About</a><a class="nav-contact" href="contact.html">Contact</a><a class="nav-services" href="services.html">Services</a><a class="nav-cta" href="explore.html" aria-current="page">Explore the map</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container explore-page">
+    <section class="page-hero">
+      <p class="eyebrow">The world is full of stories</p>
+      <h1>Choose a continent.</h1>
+      <p>Tap a location pin to browse countries and historic sites. Start anywhere; every place has a story to tell.</p>
+    </section>
+
+    <section class="map-panel" aria-label="Interactive six-continent map">
+      <div class="map-stage">
+        <img class="world-map" src="Assets/world-map.svg" alt="Flat map showing Asia, Africa, Europe, North America, South America, and Australia and Oceania. Antarctica is not shown." />
+        <button class="map-marker marker-north-america" type="button" data-region="north-america" aria-pressed="false"><img src="Assets/location-pin.svg" alt=""><span>North America</span></button>
+        <button class="map-marker marker-south-america" type="button" data-region="south-america" aria-pressed="false"><img src="Assets/location-pin.svg" alt=""><span>South America</span></button>
+        <button class="map-marker marker-europe" type="button" data-region="europe" aria-pressed="false"><img src="Assets/location-pin.svg" alt=""><span>Europe</span></button>
+        <button class="map-marker marker-africa" type="button" data-region="africa" aria-pressed="false"><img src="Assets/location-pin.svg" alt=""><span>Africa</span></button>
+        <button class="map-marker marker-asia" type="button" data-region="asia" aria-pressed="true"><img src="Assets/location-pin.svg" alt=""><span>Asia</span></button>
+        <button class="map-marker marker-oceania" type="button" data-region="oceania" aria-pressed="false"><img src="Assets/location-pin.svg" alt=""><span>Australia &amp; Oceania</span></button>
+      </div>
+      <div class="map-caption"><span>Six regions · Thirty featured sites</span><span>Select a pin to explore</span></div>
+    </section>
+
+    <section class="region-panel" id="region-panel" aria-live="polite" aria-busy="false">
+      <div class="region-header"><div><p class="eyebrow" id="region-kicker">Selected region</p><h2 id="region-title">Asia</h2></div><p class="region-meta" id="region-meta"></p></div>
+      <div class="country-list" id="country-list"></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container"><p>© 2026 Historical Atlas · Explore the places where history was made.</p></div></footer>
+</body>
+</html>
