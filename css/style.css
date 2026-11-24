@@ -201,42 +201,5 @@ h3 { font-size: 21px; margin-bottom: 8px; }
 .site-footer { padding: 19px 0; color: rgba(255,253,248,.75); background: #54171b; text-align: center; font-size: 11px; }
 .site-footer p { margin: 0; }
 
-@media (max-width: 860px) {
-  .hero-grid { grid-template-columns: 1fr; }
-  .hero-copy { max-width: 680px; }
-  .photo-collage { width: min(680px, 100%); min-height: clamp(330px, 66vw, 470px); margin: 0 auto; }
-  .story-grid { gap: 14px; }
-  .site-list { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 640px) {
-  .container { width: min(var(--content), calc(100% - 30px)); }
-  .header-inner { min-height: 70px; align-items: center; flex-wrap: wrap; gap: 7px 12px; padding-block: 9px; }
-  .brand img { width: 38px; height: 38px; }
-  .brand-name { font-size: 16px; }
-  .brand-tag { font-size: 8px; }
-  .main-nav { width: 100%; justify-content: space-between; gap: 5px; }
-  .main-nav a { font-size: 10px; }
-  .main-nav .nav-cta { padding: 7px 9px; }
-  .home-hero { padding: 54px 0 45px; }
-  .photo-collage { min-height: 330px; }
-  .photo-caption { bottom: 3%; right: -4px; padding: 11px 13px; }
-  .intro-band-inner { align-items: start; flex-direction: column; gap: 5px; }
-  .intro-band .band-mark { font-size: 9px; }
-  .steps, .story-grid { grid-template-columns: 1fr; }
-  .step-card { min-height: auto; }
-  .story-card img { height: 230px; }
-  .map-panel { margin-inline: -8px; padding: 8px; overflow-x: auto; }
-  .map-stage { width: 640px; min-height: 0; aspect-ratio: 2 / 1; }
-  .world-map { width: 100%; height: 100%; object-fit: contain; }
-  .map-marker { gap: 3px; padding: 3px 6px 3px 3px; font-size: 8px; }
-  .map-marker img { width: 18px; }
-  .map-caption { width: 640px; font-size: 10px; }
-  .region-header { align-items: start; flex-direction: column; gap: 4px; }
-  .region-meta { white-space: normal; }
-  .site-list { grid-template-columns: 1fr; padding-inline: 10px; }
-  .site-card { display: grid; grid-template-columns: 118px 1fr; }
-  .site-card img { height: 100%; min-height: 155px; }
-  .site-copy { padding: 12px; }
-  .site-copy h3 { font-size: 15px; }
-  .site-copy p { font-size: 11px; }
-}
+
+
