@@ -4,7 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Choose a continent and discover its historic landmarks." />
-  <title>Explore the Map | Historical Atlas</title>
+  <title>Explore the Map | Pin and Explore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/heritage-data.js"></script>
   <script defer src="js/explore.js"></script>
@@ -12,9 +15,9 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Historical Atlas home">
-        <img src="Assets/atlas-mark.svg" alt="">
-        <span class="brand-copy"><span class="brand-name">Historical Atlas</span><span class="brand-tag">A world of stories</span></span>
+      <a class="brand" href="index.html" aria-label="Pin and Explore home">
+        <img src="Assets/logo.png" alt="">
+        <span class="brand-copy"><span class="brand-name">Pin and Explore</span><span class="brand-tag">Discovering the Famous Historical Sites Across Different Countries</span></span>
       </a>
       <nav class="main-nav" aria-label="Main navigation">
         <a href="index.html">Home</a><a class="nav-about" href="about.html">About</a><a class="nav-contact" href="contact.html">Contact</a><a class="nav-services" href="services.html">Services</a><a class="nav-cta" href="explore.html" aria-current="page">Explore the map</a>
@@ -25,27 +28,22 @@
     <section class="page-hero">
       <p class="eyebrow">The world is full of stories</p>
       <h1>Choose a continent.</h1>
-      <p>Tap a location pin to browse countries and historic sites. Start anywhere; every place has a story to tell.</p>
+      <p>Choose a continent, find a country, and discover three historic landmarks and their stories.</p>
     </section>
 
     <section class="map-panel" aria-label="Interactive six-continent map">
       <div class="map-stage">
-        <img class="world-map" src="Assets/world-map.svg" alt="Flat map showing Asia, Africa, Europe, North America, South America, and Australia and Oceania. Antarctica is not shown." />
-        <button class="map-marker marker-north-america" type="button" data-region="north-america" aria-pressed="false"><img src="Assets/location-pin.svg" alt=""><span>North America</span></button>
-        <button class="map-marker marker-south-america" type="button" data-region="south-america" aria-pressed="false"><img src="Assets/location-pin.svg" alt=""><span>South America</span></button>
-        <button class="map-marker marker-europe" type="button" data-region="europe" aria-pressed="false"><img src="Assets/location-pin.svg" alt=""><span>Europe</span></button>
-        <button class="map-marker marker-africa" type="button" data-region="africa" aria-pressed="false"><img src="Assets/location-pin.svg" alt=""><span>Africa</span></button>
-        <button class="map-marker marker-asia" type="button" data-region="asia" aria-pressed="true"><img src="Assets/location-pin.svg" alt=""><span>Asia</span></button>
-        <button class="map-marker marker-oceania" type="button" data-region="oceania" aria-pressed="false"><img src="Assets/location-pin.svg" alt=""><span>Australia &amp; Oceania</span></button>
+        <img class="world-map" id="explore-map" src="Assets/map-with-grid.png" alt="World map showing six continents. Antarctica is not shown." />
+        <div id="map-markers" class="map-markers" aria-label="Map locations"></div>
       </div>
-      <div class="map-caption"><span>Six regions · Thirty featured sites</span><span>Select a pin to explore</span></div>
+      <div class="map-caption"><button id="back-to-world" type="button" hidden>← Back to world map</button><span id="map-instruction">Select a continent to explore</span></div>
     </section>
 
     <section class="region-panel" id="region-panel" aria-live="polite" aria-busy="false">
-      <div class="region-header"><div><p class="eyebrow" id="region-kicker">Selected region</p><h2 id="region-title">Asia</h2></div><p class="region-meta" id="region-meta"></p></div>
-      <div class="country-list" id="country-list"></div>
+      <div class="region-header"><div><p class="eyebrow" id="region-kicker">Selected country</p><h2 id="region-title">Choose a continent</h2></div><p class="region-meta" id="region-meta">Choose a continent pin above.</p></div>
+      <div class="country-list" id="country-list"><p class="empty-note">Select a continent pin, then a country pin to see its landmarks.</p></div>
     </section>
   </main>
-  <footer class="site-footer"><div class="container"><p>© 2026 Historical Atlas · Explore the places where history was made.</p></div></footer>
+  <footer class="site-footer"><div class="container"><p>© 2026 Pin and Explore · Discovering the Famous Historical Sites Across Different Countries</p></div></footer>
 </body>
 </html>
