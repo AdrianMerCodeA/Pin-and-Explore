@@ -179,6 +179,7 @@ h3 { font-size: 21px; margin-bottom: 8px; }
   box-shadow: 0 5px 14px rgba(22,42,40,.2);
   font-size: clamp(10px, 1.1vw, 13px);
   font-weight: 700;
+  text-decoration: none;
   white-space: nowrap;
   max-width: calc(100% - 12px);
   cursor: pointer;
@@ -193,6 +194,8 @@ h3 { font-size: 21px; margin-bottom: 8px; }
 .map-caption { display: flex; justify-content: space-between; gap: 16px; padding: 13px 4px 0; color: var(--muted); font-size: 12px; }
 .map-caption button { border: 0; padding: 0; color: var(--copper); background: transparent; font: inherit; font-weight: 700; cursor: pointer; }
 .region-panel { margin-top: 38px; scroll-margin-top: 24px; }
+.country-nav { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0 36px; }
+.country-section { padding-top: 18px; scroll-margin-top: 22px; }
 .region-header { display: flex; justify-content: space-between; align-items: end; gap: 24px; padding-bottom: 17px; border-bottom: 1px solid var(--line); }
 .region-header h2 { margin: 4px 0 0; font-size: clamp(29px, 4vw, 42px); }
 .region-meta { color: var(--muted); font-size: 12px; white-space: nowrap; }
