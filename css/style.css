@@ -176,6 +176,8 @@ h3 { font-size: 21px; margin-bottom: 8px; }
 }
 .map-marker span { white-space: normal; }
 .map-marker img { width: 30px; height: auto; }
+.marker-oceania { width: max-content; max-width: none; justify-content: flex-start; flex-direction: row-reverse; gap: 7px; white-space: nowrap; transform: translate(-100%, -50%); }
+.marker-oceania span { white-space: nowrap; }
 .map-marker:focus-visible { z-index: 3; }
 .map-marker:focus-visible { outline: 3px solid #f2ad20; outline-offset: 3px; }
 .map-caption { display: flex; justify-content: space-between; gap: 16px; padding: 13px 4px 0; color: #67716b; font-size: 12px; }
